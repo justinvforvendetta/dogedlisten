@@ -5,7 +5,7 @@ var ratebox_ms = 3000; // 3 second update interval
 rateboxGetRate = function() {
 	if (currentExchange == "cryptsy") {
 		// Thanks to nyg for this trick - https://github.com/nyg/bitstamp-ticker/blob/master/bitstamp.js
-		var api_url = 'https://chain.so/api/v2/get_price/DOGE/BTC';
+		var api_url = 'https://chain.so/api/v2/get_price/DOGED/BTC';
 		//var yql_url = '//query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D"' + api_url + '"&format=json&callback=?';
 		
         $.getJSON(api_url, function (jsonp) {
