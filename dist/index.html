@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>DogeListen - Dogecoin Transaction Visualizer</title>
-		<meta name="description" content="Realtime Dogecoin transaction visualizer. See and hear new transactions, trades and blocks as they propagate.">
-		<meta name="keywords" content="BitListen,Listen To Dogecoin,Dogecoin,transactions,visualizer,trades,blockchain">
-		<meta name="author" content="langerhans (Original by Maximillian Laumeister)">
-		<link rel="author" href="https://plus.google.com/100865127821381452608/posts" />
+		<title>DOGED.Listen - DogecoinDark Transaction Visualizer</title>
+		<meta name="description" content="Realtime DogecoinDark transaction visualizer. See and hear new transactions, trades, and blocks as they propagate.">
+		<meta name="keywords" content="BitListen,Listen To DogecoinDark,DogecoinDark,transactions,visualizer,trades,blockchain,btc">
+		<meta name="author" content="sunerok (Original by Maximillian Laumeister)">
 		<link rel="stylesheet" type="text/css" href="jquery.nouislider.custom.css">
 		<link rel="stylesheet" type="text/css" href="engine.css">
 		<!--[if IE]>
@@ -14,27 +13,27 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="//js.pusher.com/2.2/pusher.min.js"></script>
-		<script src="dogelisten.min.js" type="text/javascript"></script>
+		<script src="dogedlisten.min.js" type="text/javascript"></script>
 
 	</head>
 	<body>
 		<div id="header" class="serif interface">
 			<div id="rateBox">
-				<span id="rate">---</span> <span id="units">Satoshi / DOGE</span><br />
+				<span id="rate">---</span> <span id="units">Satoshi / DOGED</span><br />
 				<span class="rateButton" id="bitstampRate" onclick="switchExchange('cryptsy');">Cryptsy</span>
 			</div>
 			<img src="images/logo.png" alt="BitListen">
 			<div id="headerInfo">
 				<p>
-					Realtime Dogecoin transaction visualizer. (Forked from 'BitListen').
+					Realtime DogecoinDark transaction visualizer. (Forked from 'BitListen').
 				</p>
 				<p>
-					Most donations get highlighted: <span id="donationAddress" qrtarget="dogecoin:DNw8ecZzJJXo4LTXYoTqPvYYzMNEzFod76">DNw8ecZzJJXo4LTXYoTqPvYYzMNEzFod76</span>
+					Most donations get highlighted: <span id="donationAddress" qrtarget="dogecoindark:DPNC2H2pYUCSebQ992GyeRTRuWw3hCTBwD">DPNC2H2pYUCSebQ992GyeRTRuWw3hCTBwD</span>
 					<br />
 					<span id="musicianDonation"></span>
 				</p>
 				<p class="subdued">
-					By <a href="https://github.com/langerhans/" style="text-decoration: none;">langerhans</a> &bull; <a href="https://github.com/langerhans/bitlisten">Source Code</a>
+					<a href="http://dogecoindark.net/" style="text-decoration: none;">DogecoinDark Website</a>
 				</p>
 				<p class="subdued">
 					Forked from 'BitListen' by <a href="http://www.maxlaumeister.com/" style="text-decoration: none;">Maximillian Laumeister</a> &bull; <a href="https://github.com/MaxLaumeister/bitlisten">Source Code</a>
