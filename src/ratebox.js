@@ -25,7 +25,7 @@ rateboxGetRate = function() {
 $(document).ready(function() {
 	// Bitstamp websocket API
 	var pusher = new Pusher('e9f5cc20074501ca7395', { encrypted: true, disabledTransports: ['sockjs'], disableStats: true });
-	var channel = pusher.subscribe('ticker_doge_btc');
+	var channel = pusher.subscribe('ticker_doged_btc');
 	channel.bind('price_update', function(ticker) {
 		f (data.type == "price" && data.value.exchange=="cryptsy")
 		{
